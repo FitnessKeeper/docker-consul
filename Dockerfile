@@ -7,3 +7,5 @@ RUN \
   pip install awscli && \
   apk --purge -v del py-pip && \
   rm /var/cache/apk/*
+
+COPY scripts/instance-status.sh /usr/local/bin/instance-status.sh
