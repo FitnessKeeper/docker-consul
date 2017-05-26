@@ -7,7 +7,10 @@ STATUS=$(aws autoscaling describe-auto-scaling-instances --instance-ids $ID --re
 
 if [ $STATUS = "InService" ]; then
   echo InstanceStatus is : $STATUS
-else
+elif [ $STATUS = "Terminating:Wait" ]; then
   echo InstanceStatus is : $STATUS
   exit 255
+else
+  echo InstanceStatus is : $STATUS
+  exit 1
 fi
