@@ -7,8 +7,8 @@ sleep 10
 RC=$?
 
 if [ $RC = 255 ]; then
-#  /bin/consul leave
-  /bin/consul maint -enable
+  sleep 90
+  /bin/consul leave
 else
   echo InstanceStatus is ok
   exit 0
