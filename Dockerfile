@@ -3,7 +3,7 @@ MAINTAINER Tim Hartmann <tim.hartmann@runkeeper.com> (@paxindustria)
 
 RUN \
   apk update && \
-  apk -Uuv add groff less python py-pip jq && \
+  apk -Uuv add groff less python py-pip jq bind-tools && \
   pip install awscli && \
   apk --purge -v del py-pip && \
   rm /var/cache/apk/*
