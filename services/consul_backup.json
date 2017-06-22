@@ -1,0 +1,11 @@
+{
+  "service": {
+    "name": "ConsulBackup",
+    "checks": [
+      {
+        "script": "/usr/local/bin/consul-backup.sh",
+        "interval": "10s"
+      }
+    ]
+  }
+}
