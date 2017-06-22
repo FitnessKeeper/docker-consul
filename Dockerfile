@@ -10,3 +10,5 @@ RUN \
 
 COPY scripts/instance-status.sh /usr/local/bin/instance-status.sh
 COPY scripts/instance-status-handler.sh /usr/local/bin/instance-status-handler.sh
+COPY services/consul_backup.json /consul/config/consul_backup.json
+COPY scripts/consul-backup.sh /usr/local/bin/consul-backup.sh
