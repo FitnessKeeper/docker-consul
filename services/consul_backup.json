@@ -4,6 +4,7 @@
     "checks": [
       {
         "script": "/usr/local/bin/consul-backup.sh",
+        "status": "passing",
         "interval": "3600s"
       }
     ]
