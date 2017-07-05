@@ -1,4 +1,4 @@
-FROM consul:0.8.4
+FROM consul:0.8.5
 MAINTAINER Tim Hartmann <tim.hartmann@runkeeper.com> (@paxindustria)
 
 RUN \
