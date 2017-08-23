@@ -1,5 +1,7 @@
 # docker-consul
 
+Make sure you enable scripted checks when using this image
+`docker run fitnesskeeper/consul agent -dev -enable-script-checks`
 
 ### Customizations ontop of the standard consul image
 
